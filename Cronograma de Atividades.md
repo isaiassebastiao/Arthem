@@ -1,0 +1,12 @@
+# Cronograma de Atividades
+
+| Atividades | Descrição                                                   | Duração (dias) | Precedência |
+|------------|--------------------------------------------------------------|----------------|-------------|
+| A          | Modelagem da Base de Dados                                   | 7              | -           |
+| B          | Criação da Estrutura de Pastas e Definição da Arquitetura do Sistema | 3              | A           |
+| C          | Desenvolvimento das Funções de Validação                     | 3              | B           |
+| D          | Desenvolvimento do BackEnd                                    | 10             | C           |
+| E          | Definição da Entidade Visual                                  | 7              | C, D        |
+| F          | Desenvolvimento dos Layouts                                   | 7              | E           |
+| G          | Desenvolvimento do FrontEnd                                   | 12             | F           |
+| H          | Revisão Geral (bugs e correções)                              | 10             | G           |
