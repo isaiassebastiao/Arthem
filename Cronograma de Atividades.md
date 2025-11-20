@@ -1,6 +1,6 @@
 # Cronograma de Atividades 
 
-## Metologia Utilizada
+## Metologia de Desenvolvimento
 ### Metodologia Ágil : Framework Kanban
 Kanban é uma metodologia ágil de gestão de trabalho que utiliza um quadro visual para organizar tarefas e controlar o fluxo de entrega.
 Ela se baseia em mover atividades por colunas que representam estados do trabalho, como: A Fazer, Em Progresso e Concluído.
