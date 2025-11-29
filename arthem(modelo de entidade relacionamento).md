@@ -18,6 +18,4 @@ O modelo inclui as seguintes entidades principais:\
 O diagrama representa as relações entre estas entidades, permitindo uma
 visão clara da estrutura da base de dados do projeto.
 
-> *Nota: A imagem do diagrama deve ser adicionada manualmente no GitHub
-> ou editor Markdown, conforme o ambiente. Arquivo original:
-> `arthem(modelo de entidade relacionamento).png`.*
+
