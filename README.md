@@ -47,7 +47,7 @@ Certifique-se de que possui instalado:
 
 ### 2. Clonar o Repositório
 ```bash
-git clone https://github.com/isaiassebastiao/Galeria-Virtual-de Arte-Angolana.git
+git clone https://github.com/isaiassebastiao/Arthem.git
 ```
 
 ### 3. Colocar na Pasta do Servidor
