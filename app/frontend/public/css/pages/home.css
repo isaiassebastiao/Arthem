@@ -1,0 +1,81 @@
+.section-2{
+    margin-top: 100px;
+    padding: 40px;
+}
+
+.section-2 > h1{
+    font-size: 3.8vw;
+    font-weight: 610;
+    max-width: 1100px;
+}
+
+.section-3{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.discover-new-artworks{
+    padding:50px 30px;
+    padding-top: 220px;
+}
+
+.artworks-container{
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.artwork{
+    height: 280px;
+    width: 300px;
+    transition: .3s;
+}
+
+
+
+.artwork-item-1{
+    background: url('../../images/artes/Tarisa\ do\ Arnal.webp');
+    background-size: cover;
+}
+.artwork-item-2{
+    background: url('../../images/artes/vangog.webp');
+    background-size: cover;
+}
+.artwork-item-3{ 
+    grid-row: 1/4; 
+    grid-column: 3; 
+    height: 580px;
+    background: url('../../images/artes/monalisa.jfif');
+    background-size: cover;
+}
+
+.artwork-item-4{
+    background: url('../../images/artes/clocks.jfif');
+    background-size: cover;
+}
+.artwork-item-5{
+
+    grid-row: 2/4; 
+    grid-column: 2; 
+    height: 580px;
+    background: url('../../images/artes/woman.webp');
+    background-size: cover;
+}
+.artwork-item-6{
+    background: url('../../images/artes/Arte\ distorcida.webp');
+    background-size: cover;
+}
+
+.artwork-item-7{
+    grid-row: 3/4; 
+    grid-column: 3;
+    background: url('../../images/artes/artemoderna2.jpeg');
+    background-size: cover;
+}
+
+.artwork:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}

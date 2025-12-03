@@ -1,0 +1,62 @@
+.brand{
+    color: #DFBA69;
+}
+header{
+    display: flex;
+    padding: 40px;
+    height: 60px;
+}
+
+.section-1{
+    width: 100%;
+}
+
+.wrapper > header > .section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper > header > .section-1 > nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.section-1 a{
+    font-weight: 600;
+}
+
+.wrapper > header > .section-1 > nav > .brand{
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+
+.letter {
+    display: inline-block;
+    transform: scaleX(-1) rotate(-40deg) translate(-3px, -1px);
+}
+
+
+.auth a:first-child:hover, .nav-links:hover{
+    color: #da9e1e;
+}
+
+.sign-up{
+    color: black;
+    background-color: #DFBA69;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.sign-up:hover{
+    background-color: #da9e1e;
+}
+
+.auth{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

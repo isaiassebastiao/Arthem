@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    padding: 8px;
+    margin-top: 40px;
+    background-color: rgb(36, 36, 36);
+}
+footer > section{
+    display: flex;
+}
+
+.about-us{
+    width: 320px;
+    text-align: justify;
+}
+.section-4{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.section-5{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6px;
+}
+
+ul{
+    padding: 0;
+}
+strong{
+    line-height: 40px;
+}
+section p, section li{
+    line-height: 20px;
+}
+footer a:hover{
+    color: #da9e1e;
+}
