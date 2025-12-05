@@ -24,7 +24,8 @@
     padding: 10px;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    border: 1px solid royalblue;
 }
 
 .artwork{
@@ -89,3 +90,23 @@
 /*
     qual o nome dos autores dessas imagens(obras de arte) e o nome delas ?
 */
+
+@media (max-width: 910px){
+
+    .artwork-item-3, .artwork-item-5, .artwork-item-7 {
+        grid-row: auto;
+        grid-column: auto;
+        height: 280px;
+        background-size: cover;
+    }
+    
+    .artworks-container{
+        width: 60%;
+    }
+
+    .artwork{
+        width: 100%;
+    }
+
+    
+}
