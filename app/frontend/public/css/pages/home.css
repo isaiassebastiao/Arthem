@@ -25,7 +25,6 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    border: 1px solid royalblue;
 }
 
 .artwork{
@@ -66,7 +65,7 @@
 }
 
 .artwork-item-1 > div{
-    background-image: url('../../images/artes/Tarisa\ do\ Arnal.webp');
+    background-image: url('../../images/artes/TarisadoArnal.webp');
 }
 .artwork-item-2 > div{
     background-image: url('../../images/artes/vangog.webp');
@@ -81,14 +80,14 @@
     background-image: url('../../images/artes/woman.webp');
 }
 .artwork-item-6 > div{
-    background-image: url('../../images/artes/Arte\ distorcida.webp');
+    background-image: url('../../images/artes/Artedistorcida.webp');
 }
 .artwork-item-7 > div{
     background-image: url('../../images/artes/artemoderna2.jpeg');
 }
 
 /*
-    qual o nome dos autores dessas imagens(obras de arte) e o nome delas ?
+    descobrir o nome dos autores dessas imagens(obras de arte) e o nome delas.
 */
 
 @media (max-width: 910px){
