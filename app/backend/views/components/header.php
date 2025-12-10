@@ -12,7 +12,7 @@
             <section class="section-1">
             
                 <nav>
-                    <a href="#" class="brand">Arth<span class="letter">e</span>m</a>
+                    <a href="" class="brand">Arth<span class="letter">e</span>m</a>
                     <a href="../pages/home.php" class="nav-links">Home</a>
                     <a href="../pages/gallery.php" class="nav-links">Galeria</a>
                     <a href="../pages/artists.php" class="nav-links">Artistas</a>
@@ -21,9 +21,8 @@
                 </nav>
 
                 <div class="auth">
-                    <a href="#" class="sign-in">Entrar</a>
-                    <a href="#" class="sign-up">Cadastrar</a>
-
+                    <a href="../pages/auth.php?action=signIn" class="sign-in">Entrar</a>
+                    <a href="../pages/auth.php?action=signUp" class="sign-up">Cadastrar</a>
                 </div>
                 <menu>
                     <div>
@@ -41,8 +40,8 @@
                             <a href="../pages/about.php" class="menu-link">Sobre</a>
                             <br><br>
                             
-                            <a href="#" class="menu-link">Entrar</a>
-                            <a href="#" class="menu-link">Cadastrar</a>
+                            <a href="../pages/auth.php?action=signIn" class="menu-link">Entrar</a>
+                            <a href="../pages/auth.php?action=signUp" class="menu-link">Cadastrar</a>
                         </nav>
 
                         <div style="transform:translate(-40px, 10px);">
