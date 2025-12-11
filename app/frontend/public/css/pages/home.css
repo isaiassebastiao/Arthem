@@ -51,61 +51,97 @@
     grid-column: 3;
 }
 
-.artwork > div:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.artwork{
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
 }
 
-.artwork > div{
+.artwork .img{
     height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: .4s ease;
+    transition: transform .35s ease;
 }
 
-.artwork-item-1 > div{
+.artwork:hover .img{
+    transform: scale(1.15);
+}
+
+.artwork .overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    transition: opacity .3s ease;
+}
+
+.artwork .overlay span{
+    color: white;
+    font-size: 16px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .35s ease;
+}
+
+.artwork:hover .overlay{
+    opacity: 1;
+}
+
+.artwork:hover .overlay span{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.artwork-item-1 .img{
     background-image: url('../../images/artes/TarisadoArnal.webp');
 }
-.artwork-item-2 > div{
+.artwork-item-2 .img{
     background-image: url('../../images/artes/vangog.webp');
 }
-.artwork-item-3 > div{
+.artwork-item-3 .img{
     background-image: url('../../images/artes/monalisa.jfif');
 }
-.artwork-item-4 > div{
+.artwork-item-4 .img{
     background-image: url('../../images/artes/clocks.jfif');
 }
-.artwork-item-5 > div{
+.artwork-item-5 .img{
     background-image: url('../../images/artes/woman.webp');
 }
-.artwork-item-6 > div{
+.artwork-item-6 .img{
     background-image: url('../../images/artes/Artedistorcida.webp');
 }
-.artwork-item-7 > div{
+.artwork-item-7 .img{
     background-image: url('../../images/artes/artemoderna2.jpeg');
 }
 
-/*
-    descobrir o nome dos autores dessas imagens(obras de arte) e o nome delas.
-*/
 
 @media (max-width: 910px){
 
-    .artwork-item-3, .artwork-item-5, .artwork-item-7 {
+    .artwork-item-3, .artwork-item-5, .artwork-item-7{
         grid-row: auto;
         grid-column: auto;
-        height: 280px;
-        background-size: cover;
+        height: auto;
     }
-    
+
     .artworks-container{
-        width: 60%;
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 
     .artwork{
         width: 100%;
+        height: auto;
     }
 
-    
+    .artwork .img{
+        width: 100%;
+        padding-bottom: 140%;
+        background-size: cover;
+        background-position: center;
+    }
 }
