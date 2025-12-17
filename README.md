@@ -1,6 +1,6 @@
 # Arthem - Galeria Virtual de Arte Angolana
 
-Uma plataforma digital dedicada à divulgação de artistas angolanos, permitindo aos visitantes explorar obras de arte, comprar peças e acompanhar eventos culturais.
+Uma plataforma digital dedicada à divulgação de artistas angolanos, permitindo aos visitantes explorar obras de arte e omprar peças.
 
 
 
