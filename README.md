@@ -18,10 +18,6 @@ Uma plataforma digital dedicada à divulgação de artistas angolanos, permitind
 - Integração com métodos de contacto ou processo de reserva.
 - Gestão simples de disponibilidade e informações de venda.
 
-### Agenda Cultural
-- Listagem de exposições e eventos ligados ao mundo artístico.
-- Informações como data, local e descrição do evento.
-
 
 
 ## Tecnologias Utilizadas
