@@ -8,22 +8,32 @@
             <p>Criadores que dão vida à arte angolana.</p>
     
             <div class='grid-container'>
-                <div class='grid-card'>
-                    <div class='img-placeholder round'></div>
-                    <h3 class='card-title'>Nome do Artista</h3>
-                    <p class='card-info'>Categoria de atuação</p>
-                </div>
-                <div class='grid-card'>
-                    <div class='img-placeholder round'></div>
-                    <h3 class='card-title'>Nome do Artista</h3>
-                    <p class='card-info'>Categoria de atuação</p>
-                </div>
-                <div class='grid-card'>
-                    <div class='img-placeholder round'></div>
-                    <h3 class='card-title'>Nome do Artista</h3>
-                    <p class='card-info'>Categoria de atuação</p>
-                </div>
+
+                <a href="artist.php">
+                    <div class='grid-card artists'>
+                        <div class='img-placeholder round'></div>
+                        <h3 class='card-title'>Nome do Artista</h3>
+                        <p class='card-info'>Categoria de atuação</p>
+                    </div>
+                </a>
+
+                <a href="artist.php">
+                    <div class='grid-card artists'>
+                        <div class='img-placeholder round'></div>
+                        <h3 class='card-title'>Nome do Artista</h3>
+                        <p class='card-info'>Categoria de atuação</p>
+                    </div>
+                </a>
+
+                <a href="artist.php">
+                    <div class='grid-card artists'>
+                        <div class='img-placeholder round'></div>
+                        <h3 class='card-title'>Nome do Artista</h3>
+                        <p class='card-info'>Categoria de atuação</p>
+                    </div>
+                </a>
             </div>
             
     </section>
 </main>
+<script src="../../../frontend/src/components/artist_info.js"></script>

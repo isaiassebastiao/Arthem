@@ -1,0 +1,10 @@
+.profile-link{
+    background-color: rgb(80, 80, 80);
+    padding: 8px 16px;
+    border-radius: 100%;
+    border: 1px solid #FFFEDF;
+}
+
+.profile-link:hover{
+    background-color: rgba(109, 105, 105, 0.297);
+}

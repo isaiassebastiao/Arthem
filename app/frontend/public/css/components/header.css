@@ -96,6 +96,42 @@ menu img{
     padding-left: 40px;
 }
 
+.user-nav-menu{
+    background-color: #252525;
+    padding: 10px 0px;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    position: absolute;
+    transform: translate(-100px, 20px);
+    width: 140px;
+    font-size: 10pt;
+    align-items: center;
+}
+
+.user-nav-menu li{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.user-nav-menu a:hover{
+    color: #da9e1e;
+}
+
+.notifications-button{
+    width:20px; 
+    margin-left:10px; 
+    cursor:pointer;
+}
+.active{
+    color: #da9e1e;
+}
+
+
+
+
 .menu-links .menu-link:hover{
     background-color: rgba(0,0,0,0.3);
 }

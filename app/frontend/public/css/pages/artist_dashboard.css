@@ -1,0 +1,163 @@
+@import url('artist_dashboard_forms.css');
+
+*{
+  color:#fffedf;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+body{
+    margin:0;
+    background:#0f0f0f;
+    overflow-y: hidden;
+}
+.topo{
+  padding:20px 40px;
+  background:#121212;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.topo h1{
+  color:#f5c76b;
+}
+
+.container{
+  display:flex;
+  height:calc(100vh - 80px);
+}
+.sidebar{
+  width:220px;
+  background:#151515;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.sidebar button{
+  background:#1f1f1f;
+  border:none;
+  color:#ccc;
+  padding:12px;
+  border-radius:10px;
+  cursor:pointer;
+  text-align:left;
+}
+.sidebar button.active{
+  background:#f5c76b;
+  color:#000;
+  font-weight:bold;
+}
+.conteudo{
+  flex:1;
+  padding:30px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+th, td{
+  padding:12px;
+  border-bottom:1px solid #222;
+  text-align:left;
+}
+th{
+  color:#aaa;
+}
+td img{
+  width:60px;
+  border-radius:8px;
+}
+td button{
+  border:none;
+  padding:8px 12px;
+  border-radius:8px;
+  margin-right:6px;
+  cursor:pointer;
+}
+
+.ver{background:#25D366;color:#000;}
+.editar{background:#f5c76b;color:#000;}
+.excluir{background:#b23b3b;color:#fff;}
+.ativo{color:#25D366;}
+.inativo{color:#aaa;}
+
+
+
+#view_artwork_modal{
+  
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  display: none;
+  animation: fade .4s ease;
+
+  
+}
+#view_artwork_modal img{
+  max-width: 100%;
+  border-radius: 6px;
+  
+}
+
+#view_artwork_modal .modal-title{
+  font-size: 20pt;
+}
+
+#delete_artwork_modal{
+  background-color: #1f1f1f;
+  border-radius: 6px;
+  height: 150px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  animation: showAlert .4s ease-in-out;
+  display: none;
+  padding: 100px 20px;
+  top: 0;
+  position: absolute;
+}
+
+
+#cancel_delete{
+  background-color: #f5c76b;
+  color: #0f0f0f;
+}
+
+#confirm_delete{
+  background-color: #b23b3b;
+  color: #fffedf;
+}
+
+#delete_artwork_modal strong{
+  font-size: 16pt;
+}
+
+#delete_artwork_modal button{
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+button:hover{
+  opacity: .8;
+}
+
+@keyframes showAlert{
+  from{
+      opacity: 0;
+      transform: translateY(-50px);
+  }to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}

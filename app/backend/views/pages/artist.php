@@ -6,8 +6,8 @@
     <section class="gallery-main-section">
 
         <section style="align-selft:start;">
-            <h1>Galeria de Obras</h1>
-            <p>Explore obras de arte angolana em diversas categorias</p>
+            <h1 style="text-align:center;">Cesaltino Félix</h1>
+            <p>Artista angolano contemporâneo com foco em identidade cultural</p>
         </section>
 
         <section class="masonry">

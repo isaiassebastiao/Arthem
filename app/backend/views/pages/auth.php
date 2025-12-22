@@ -1,63 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Auth</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../frontend/public/css/pages/auth.css">
+</head>
+    <body>
 
+        <div class="auth-container">
+            <div class="auth-box">
 
-<?php
-    require_once('../components/header.php');
+                <form class="form active" id="login">
 
-    $action = $_GET["action"] ?? null;
+                    <h2>Entrar</h2>
 
-    if($action === 'signIn'){
-        echo "<style>.sign-in, .sign-up-form{display: none;}</style>";
-    }else{
-        echo "<style>.sign-up, .sign-in-form{display:none;}</style>";
-    }
-?>
-<style>
-    .nav-links{
-        display: none;
-    }
-    .auth{
-        display:flex;
-    }
-    menu{
-        display:none;
-    }
-</style>
-<main>
-    <section class="auth-main-section">
-        <div>
-            <form class="sign-up-form form">
-                <h2>Cadastrar</h2>
-                <div><input name="user-name" autocomplete="off" required placeholder="seu nome de usuário" type="text"></div>
-                <div><input name="email" autocomplete="off" required placeholder="seu email" type="email"></div>
-                <div><input name="password" autocomplete="off" required placeholder="sua senha" type="password"></div>
-                <div><input name="phone-number" autocomplete="off" required placeholder="seu número de telefone" type="number"></div>
-                <div style="margin-top:20px;">
-                    <select name="role">
-                        <option value="0">Selecione o tipo de usuário</option>
-                        <option value="1">Comun</option>
-                        <option value="2">Artista</option>
-                    </select>
-                </div>
-                <div>
-                    <select name="category">
-                        <option value="0">Selecione a sua Categoria</option>
-                        <option value="1">Categoria 1</option>
-                        <option value="2">Categoria 2</option>
-                        <option value="3">Categoria 3</option>
-                        <option value="4">Categoria 4</option>
-                        <option value="5">Todas</option>
-                    </select>
-                </div>
-                <button type="submit">Cadastrar</button>
-            </form>
+                    <div class="input-group">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Email" required name="email">
+                    </div>
+
+                    <div class="input-group">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Senha" required name="password">
+                    </div>
+
+                    <button class="btn-primary" type="submit">Entrar</button>
+
+                    <p class="switch">
+                        Não tem conta?
+                        <a href="../pages/auth.php?action=signUp">Criar conta</a>
+                    </p>
+                </form>
+
+            
+
+                <form class="form" id="register">
+
+                    <h2>Criar Conta</h2>
+
+                    <div class="input-group">
+                        <i class='bx bx-user'></i>
+                        <input type="text" placeholder="Nome de usuário" required name="name">
+                    </div>
+
+                    <div class="input-group">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Email" required name="email">
+                    </div>
+
+                    <div class="input-group">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Senha" required name="password">
+                    </div>
+
+                    <div class="input-group">
+                        <i class='bx bx-phone'></i>
+                        <input type="tel" placeholder="Telefone" required name="phone_number">
+                    </div>
+
+                    <div class="input-group textarea">
+                        <i class='bx bx-align-left'></i>
+                        <textarea placeholder="Dê-nos uma breve biografia sobre si" required name="biography"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <i class='bx bx-category'></i>
+                        <select required name="category">
+                            <option selected disabled required>Selecione sua categoria</option>
+                            <option value="1">Arte Digital</option>
+                            <option value="2">Desenho</option>
+                            <option value="3">Escultura</option>
+                            <option value="4">Fotografia</option>
+                            <option value="5">Pintura</option>
+                            <option value="6">Todos</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-primary" type="submit">Cadastrar</button>
+
+                    <p class="switch">
+                        Já tem conta?
+                        <a href="../pages/auth.php?action=signIn">Entrar</a>
+                    </p>
+                </form>
+
+            </div>
         </div>
-        <div>
-            <form class="sign-in-form form">
-                <h2>Entrar</h2>
-                <div><input name="email" autocomplete="off" required placeholder="seu email" type="email"></div>
-                <div><input name="password" autocomplete="off" required placeholder="sua senha" type="password"></div>
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
-    </section>
-</main>
+
+    </body>
+</html>
+<script src="../../../frontend/src/components/auth_validations.js"></script>
+<script src="../../../frontend/src/pages/Auth.js"></script>

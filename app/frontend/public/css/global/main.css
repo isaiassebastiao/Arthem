@@ -35,3 +35,6 @@ body{
 main{
   flex: 1;
 }
+.art, .artists{
+  cursor: pointer;
+}

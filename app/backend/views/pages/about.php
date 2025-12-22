@@ -34,11 +34,6 @@
                         <strong>Venda segura e autorizada: </strong>Cada obra só é listada mediante autorização do artista e com preço definido.
                     </p>
                 </div>
-                <div>
-                    <p>
-                        <strong>Agenda cultural organizada: </strong>Eventos futuros, exposições e atividades do cenário artístico nacional.
-                    </p>
-                </div>
             </div>
         </section>
 
