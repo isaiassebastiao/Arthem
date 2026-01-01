@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Auth</title>
+  <!---       
+  
+  
+  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../../../frontend/public/css/pages/auth.css">
+    <?php
+        require_once('../../session/session.php');
+        require_once('../components/alerts.php');
+    ?>
 </head>
     <body>
 
@@ -73,7 +81,6 @@
                             <option value="3">Escultura</option>
                             <option value="4">Fotografia</option>
                             <option value="5">Pintura</option>
-                            <option value="6">Todos</option>
                         </select>
                     </div>
 
@@ -91,4 +98,4 @@
     </body>
 </html>
 <script src="../../../frontend/src/components/auth_validations.js"></script>
-<script src="../../../frontend/src/pages/Auth.js"></script>
+<script type="module" src="../../../frontend/src/pages/auth.js"></script>

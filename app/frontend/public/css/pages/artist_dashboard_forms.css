@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   backdrop-filter: blur(15px);
 }
@@ -55,7 +55,7 @@
   color: #f5c76b;
 }
 
-.input-group input, .input-group textarea, .input-group select{
+.input-group input, .input-group textarea, .input-group select, input[type="search"]{
   width: 100%;
   padding: 14px 14px 14px 44px;
   background: #262626;
@@ -77,14 +77,21 @@
   padding-top: 16px;
 }
 
-.input-group input::placeholder, .input-group textarea::placeholder{
+.input-group input::placeholder, .input-group textarea::placeholder, input[type="search"]::placeholder{
   color: #aaa;
 }
 
-.input-group input:focus, .input-group textarea:focus, .input-group select:focus{
+.input-group input:focus, .input-group textarea:focus, .input-group select:focus, input[type="search"]:focus{
   border-color: #f5c76b;
   box-shadow: 0 0 0 2px rgba(245,199,107,.15);
 }
+
+input[type="search"]{
+  max-width: 220px;
+  height: 36px;
+  border-radius: 8px;
+}
+
 
 .upload-box{
   display: flex;

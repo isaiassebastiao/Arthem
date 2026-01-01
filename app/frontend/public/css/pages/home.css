@@ -1,73 +1,65 @@
+
 .section-2{
     margin-top: 100px;
     padding: 40px;
 }
 
 .section-2 > h1{
-    font-size: 3.8vw;
+    font-size: 3.2vw;
     font-weight: 610;
     max-width: 1100px;
 }
 
 .section-3{
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     align-items: center;
+    margin-top: 360px;
 }
 
-.discover-new-artworks{
-    padding:50px 30px;
-    padding-top: 220px;
-}
 
 .artworks-container{
+    width: 100%;
+    max-width: 1100px; 
     padding: 10px;
+    margin: 0 auto;
+
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
+
 
 .artwork{
-    overflow: hidden;
     position: relative;
+    border-radius: 8px;
+    overflow: hidden;
     height: 280px;
-    width: 300px;
 }
 
-.artwork-item-3{ 
-    grid-row: 1/4; 
-    grid-column: 3; 
+.artwork img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.artwork:hover img{
+    transform: scale(1.15);
+}
+
+
+.artwork-item-3{
+    grid-row: span 2;
     height: 580px;
 }
 
 .artwork-item-5{
-    grid-row: 2/4; 
-    grid-column: 2; 
+    grid-row: span 2;
     height: 580px;
 }
 
-.artwork-item-7{
-    grid-row: 3/4; 
-    grid-column: 3;
-}
 
-.artwork{
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-}
-
-.artwork .img{
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: transform .35s ease;
-}
-
-.artwork:hover .img{
-    transform: scale(1.15);
-}
 
 .artwork .overlay{
     position: absolute;
@@ -97,51 +89,54 @@
     opacity: 1;
 }
 
-.artwork-item-1 .img{
-    background-image: url('../../images/artes/TarisadoArnal.webp');
-}
-.artwork-item-2 .img{
-    background-image: url('../../images/artes/vangog.webp');
-}
-.artwork-item-3 .img{
-    background-image: url('../../images/artes/monalisa.jfif');
-}
-.artwork-item-4 .img{
-    background-image: url('../../images/artes/clocks.jfif');
-}
-.artwork-item-5 .img{
-    background-image: url('../../images/artes/woman.webp');
-}
-.artwork-item-6 .img{
-    background-image: url('../../images/artes/Artedistorcida.webp');
-}
-.artwork-item-7 .img{
-    background-image: url('../../images/artes/artemoderna2.jpeg');
-}
 
-
-@media (max-width: 910px){
-
-    .artwork-item-3, .artwork-item-5, .artwork-item-7{
-        grid-row: auto;
-        grid-column: auto;
-        height: auto;
-    }
+@media (max-width: 900px){
 
     .artworks-container{
-        width: 90%;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        display: block;
+        column-count: 2;
+        column-gap: 16px;
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .artwork .overlay{
+        opacity: 1;
+        background: linear-gradient(
+            to top,
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0)
+        );
+    }
+
+    .artwork .overlay span{
+        opacity: 1;
+        transform: none;
     }
 
     .artwork{
         width: 100%;
         height: auto;
+        margin-bottom: 16px;
+        break-inside: avoid;
     }
 
-    .artwork .img{
+    .artwork img{
         width: 100%;
-        padding-bottom: 140%;
-        background-size: cover;
-        background-position: center;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .artwork-item-3, .artwork-item-5{
+        grid-row: auto;
+        height: auto;
     }
 }
+
+@media (max-width: 480px){
+    .artworks-container{
+        column-count: 1;
+    }
+}
+
+

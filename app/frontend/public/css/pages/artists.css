@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     gap: 32px;
+    text-align: center;
 }
 .grid-card{
     background: #111;
@@ -14,8 +15,8 @@
 }
 
 .img-placeholder.round{
-    width:140px; 
-    height:140px;
+    width:120px; 
+    height:120px;
     border-radius:50%;
     margin:0 auto 20px auto;
 }
@@ -26,5 +27,12 @@
 .card-info{ 
     color:#b5b09a; 
     font-size:14px; 
+}
+
+.round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30pt;
 }
 
