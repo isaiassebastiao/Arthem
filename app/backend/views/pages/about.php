@@ -39,7 +39,7 @@
 
         <section class="about-section-4">
             <h2>Compromisso</h2>
-            <p>Transparência é a base da Arthem. Exibimos sempre o estado real das obras (Disponível, Reservada ou Vendida), garantindo ao visitante informações claras e confiáveis, sem fugir da estética que representa a nossa identidade: elegante, artística e profundamente angolana.</p>
+            <p>Transparência é a base da Arthem. Exibimos sempre o estado real das obras (Disponível ou Vendida), garantindo ao visitante informações claras e confiáveis, sem fugir da estética que representa a nossa identidade: elegante, artística e profundamente angolana.</p>
         </section>
     
         <section class="about-section-5">

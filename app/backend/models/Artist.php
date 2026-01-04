@@ -50,6 +50,7 @@
                     
                     session_start();
                     $_SESSION['id'] = $user['id'];
+                    $_SESSION['name'] = $user['nome'];
 
                     return ['success'=>true, 'message'=>'Login realizado com sucesso!', 'redirect'=>'../pages/artist_dashboard.php'];
                 }
@@ -62,7 +63,7 @@
 
             global $pdo;
 
-            $stmt = $pdo->prepare("SELECT artists.id, artists.nome, artists.email, artists.password, artists.phone_number, artists.biography, categories.category, artists.created_at FROM artists JOIN categories on artists.category_id = categories.id ORDER BY created_at DESC");
+            $stmt = $pdo->prepare("SELECT artists.id, artists.nome, artists.email, artists.phone_number, artists.biography, categories.category, artists.created_at FROM artists JOIN categories on artists.category_id = categories.id ORDER BY created_at DESC");
 
             $stmt->execute();
 
@@ -71,7 +72,7 @@
             if($all_artists_data){
                 return ['success'=>true, 'data'=>$all_artists_data];
             }
-            return ['success'=>false, 'message'=>'Erro ao listar os artistas'];
+            return ['success'=>false, 'message'=>'Em breve novos artistas aparecerão aqui'];
             
         }
 
@@ -81,7 +82,7 @@
 
             global $pdo;
 
-            $stmt = $pdo->prepare("SELECT artists.id, artists.nome, artists.email, artists.password, artists.phone_number, artists.biography, categories.category, artists.created_at FROM artists JOIN categories on artists.category_id = categories.id WHERE artists.id = ?");
+            $stmt = $pdo->prepare("SELECT artists.id, artists.nome, artists.phone_number, artists.biography, categories.category, artists.created_at FROM artists JOIN categories on artists.category_id = categories.id WHERE artists.id = ?");
 
             $stmt->execute([$this->id]);
             

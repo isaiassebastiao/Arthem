@@ -1,15 +1,7 @@
-const art = [...document.querySelectorAll('.art')];
-const purchaseArtWorkModal = document.querySelector('.purchase-artwork-container');
 
-const closePurchaseModalButton = document.querySelector('.close-purchase-modal-button');
-closePurchaseModalButton.addEventListener('click', ()=>{
-    purchaseArtWorkModal.style.display = 'none';
-});
+const purchase_artwork_modal = document.querySelector('.purchase-artwork-container');
 
-art.forEach(artwork=>{
-    artwork.addEventListener('click', ()=>{
-        //chamar modal...
-        purchaseArtWorkModal.style.display = 'flex';
-        console.log(artwork);
-    });
+const close_purchase_modal_button = document.querySelector('.close-purchase-modal-button');
+close_purchase_modal_button.addEventListener('click', ()=>{
+    purchase_artwork_modal.style.display = 'none';
 });

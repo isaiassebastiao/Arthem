@@ -4,5 +4,5 @@
 
     if(isset($_SESSION['id'])){
         session_destroy();
-        header('Location: home.php?action=home');
+        header('Location: home.php?page=home');
     }
