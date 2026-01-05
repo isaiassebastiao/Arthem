@@ -59,4 +59,4 @@ Na raíz do projecto, há um arquivo chamado  **arthem.sql**, importe em seu ger
 
 ### 6. Executar o Projecto
 
-No navegador, pesquise: http://localhost/nomeDoRepositorioClonado
+No navegador, pesquise: http://localhost/nomeDoRepositorioClonado/app
