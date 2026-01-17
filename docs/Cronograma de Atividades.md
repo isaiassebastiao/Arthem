@@ -13,11 +13,11 @@ flexível, visual, simples e sem rigidez de tempo, permitindo trabalhar com libe
 
 | Atividade | Descrição | Estimativa | Status |
 |-----------|-----------|------------|--------|
-| A | Modelagem da Base de Dados | 7 dias | A Fazer |
-| B | Criação da Estrutura de Pastas e Arquitetura | 3 dias | A Fazer |
-| C | Desenvolvimento das Funções de Validação | 3 dias | A Fazer |
-| D | Desenvolvimento do BackEnd | 10 dias | A Fazer |
-| E | Definição da Entidade Visual | 7 dias | A Fazer |
-| F | Desenvolvimento dos Layouts | 7 dias | A Fazer |
-| G | Desenvolvimento do FrontEnd | 12 dias | A Fazer |
-| H | Revisão Geral (bugs e correções) | 10 dias | A Fazer |
+| A | Modelagem da Base de Dados | 7 dias | Concluído |
+| B | Criação da Estrutura de Pastas e Arquitetura | 3 dias | Concluído |
+| C | Desenvolvimento das Funções de Validação | 3 dias | Concluído |
+| D | Desenvolvimento do BackEnd | 10 dias | Concluído |
+| E | Definição da Entidade Visual | 7 dias | Concluído |
+| F | Desenvolvimento dos Layouts | 7 dias | Concluído |
+| G | Desenvolvimento do FrontEnd | 12 dias | Concluído |
+| H | Revisão Geral (bugs e correções) | 10 dias | Concluído |

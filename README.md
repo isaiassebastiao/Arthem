@@ -1,6 +1,6 @@
 # Arthem - Galeria Virtual de Arte Angolana
 
-Uma plataforma digital dedicada à divulgação de artistas angolanos, permitindo aos visitantes explorar obras de arte, comprar peças e acompanhar eventos culturais.
+Uma aplicação web dedicada à divulgação de artistas angolanos, permitindo aos visitantes explorar obras de arte e comprar peças.
 
 
 
@@ -8,19 +8,18 @@ Uma plataforma digital dedicada à divulgação de artistas angolanos, permitind
 
 ### Exposição de Obras
 - Organização de obras por categoria:
-  - Pintura  
+  - Arte Digital  
+  - Desenho  
   - Escultura  
   - Fotografia  
+  - Pintura  
+
 - Visualização individual com detalhes sobre cada peça e o artista.
 
 ### Venda Online
 - Sistema de catálogo para obras disponíveis para compra.
 - Integração com métodos de contacto ou processo de reserva.
 - Gestão simples de disponibilidade e informações de venda.
-
-### Agenda Cultural
-- Listagem de exposições e eventos ligados ao mundo artístico.
-- Informações como data, local e descrição do evento.
 
 
 
@@ -54,6 +53,10 @@ git clone https://github.com/isaiassebastiao/Arthem.git
 
 Mova a pasta clonada para **htdocs** (se usar XAMPP), para **www** (se usar WAMP)
 
-### 4. Executar o Projecto
+### 5. Importação da Base de Dados
+
+Na raíz do projecto, há um arquivo chamado  **arthem.sql**, importe em seu gerenciador de banco de dados MySQL
+
+### 6. Executar o Projecto
 
 No navegador, pesquise: http://localhost/nomeDoRepositorioClonado

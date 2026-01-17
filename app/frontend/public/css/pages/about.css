@@ -53,9 +53,14 @@
 .about-section-5{
     margin-top: 80px;
     margin-bottom: 40px;
+    
 }
 
 .about-section-5 p{
     font-size: 11pt;
     opacity: 0.5;
+}
+
+p:hover{
+    cursor: default;
 }

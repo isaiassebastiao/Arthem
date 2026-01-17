@@ -16,9 +16,11 @@
 
 ### 1.3 Classificação das Obras
 - Cada obra deve ser classificada obrigatoriamente em **uma** das categorias:
-  - Pintura
+  - Arte Digital
+  - Desenho
   - Escultura
   - Fotografia
+  - Pintura
 
 ### 1.4 Informações Obrigatórias das Obras
 - Uma obra só pode ser publicada se possuir:
@@ -42,64 +44,33 @@
 ### 2.2 Preço Definido
 - Toda obra à venda deve ter preço definido pelo artista.
 
-### 2.3 Venda Exclusiva
-- Uma obra só pode ser reservada ou vendida para um cliente por vez.
-
-### 2.4 Confirmação de Venda
+### 2.3 Confirmação de Venda
 - A venda só é concluída após confirmação do artista.
 
-### 2.5 Método de Pagamento / Contacto
+### 2.4 Método de Pagamento / Contacto
 - A plataforma deve permitir que o comprador entre em contacto via canais fornecidos (ex.: e‑mail, WhatsApp) para completar o processo de pagamento.
 
 ---
 
-## 3. Regras de Agenda Cultural
-
-### 3.1 Registro de Eventos
-- Todo evento deve conter:
-  - Nome
-  - Data
-  - Local
-  - Descrição
-  - Imagem (opcional)
-
-### 3.2 Ordenação por Data
-- Eventos futuros devem aparecer antes dos eventos passados na listagem da agenda.
-
-### 3.3 Validade das Informações
-- Eventos não podem ser publicados com datas inválidas ou já decorridas (exceto como **"Eventos Passados"**).
+## 3. Denúncia de Obras
+- Artistas podem ser denunciados por visitantes ou outros artistas e essas denúncias serão revisadas pelo administrador.
 
 ---
 
-## 4. Regras Administrativas
 
-### 4.1 Gestão dos Papéis
-- Apenas administradores podem cadastrar, editar ou remover:
-  - Obras
-  - Artistas
-  - Eventos
+## 4. Regras de Experiência do Visitante
 
-### 4.2 Publicação Moderada
-- Uma obra ou evento só aparece publicamente após aprovação do administrador.
-
----
-
-## 5. Regras de Experiência do Visitante
-
-### 5.1 Acesso Livre
+### 4.1 Acesso Livre
 - Visitantes podem visualizar obras e eventos sem necessidade de login.
 
-### 5.2 Filtros e Pesquisa
-- O visitante pode filtrar obras por:
-  - Categoria
-  - Faixa de preço
 
-### 5.3 Transparência de Informação
+### 4.2 Transparência de Informação
 - Todos os itens à venda devem exibir claramente:
   - Preço
-  - Estado (Disponível, Reservada, Vendida)
+  - Estado (Disponível, Vendida, Não Disponível)
 
 ---
+
 
 ## Observações Gerais
 - Corrigir e padronizar termos durante a implementação (ex.: grafia, campos obrigatórios).

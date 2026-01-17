@@ -7,7 +7,7 @@
         <section class="about-section-1">
     
             <h1>Sobre a Arthem</h1>
-            <p>A Arthem é uma plataforma digital criada para promover a arte angolana, dando visibilidade a artistas locais e facilitando a exposição e a venda das suas obras. Com um design minimalista e direto, nossa missão é proporcionar uma experiência moderna e elegante, sempre respeitando a identidade visual que representa a autenticidade da arte nacional.</p>
+            <p>A Arthem é uma aplicação criada para promover a arte angolana, dando visibilidade a artistas locais e facilitando a exposição e a venda das suas obras. Com um design minimalista e direto, nossa missão é proporcionar uma experiência moderna e elegante, sempre respeitando a identidade visual que representa a autenticidade da arte nacional.</p>
     
         </section>
     
@@ -34,12 +34,17 @@
                         <strong>Venda segura e autorizada: </strong>Cada obra só é listada mediante autorização do artista e com preço definido.
                     </p>
                 </div>
+                <div>
+                    <p>
+                        <strong>Denúncias de Obras: </strong>Uma obra pode ser desabilitada caso viole os Termos e Condições da Arthem.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section class="about-section-4">
             <h2>Compromisso</h2>
-            <p>Transparência é a base da Arthem. Exibimos sempre o estado real das obras (Disponível, Reservada ou Vendida), garantindo ao visitante informações claras e confiáveis, sem fugir da estética que representa a nossa identidade: elegante, artística e profundamente angolana.</p>
+            <p>Transparência é a base da Arthem. Exibimos sempre o estado real das obras (Disponível ou Vendida), garantindo ao visitante informações claras e confiáveis, sem fugir da estética que representa a nossa identidade: elegante, artística e profundamente angolana.</p>
         </section>
     
         <section class="about-section-5">

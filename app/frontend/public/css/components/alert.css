@@ -1,0 +1,45 @@
+.alert-modal{
+    
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-top: 30px;
+    margin-right: 20px;
+    z-index: 300;
+    display: none;
+}
+.alert-modal div{
+
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+    padding: 8px 20px;
+    border-radius: 8px;
+    border-left: 6px solid #DFBA69;
+    animation: fade .4s ease;
+    
+}
+.alert-error{
+    border-left: 6px solid rgb(199, 0, 0);
+}
+div p{
+    margin: 14px;
+}
+
+.alertFadeOut{
+    transition: .3s;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.alertFadeIn{
+    transition: .3s;
+    transform: translateX(0);
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

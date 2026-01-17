@@ -5,6 +5,8 @@
   padding: 0px 40px;
 }
 
+#gallery_section-1{align-self: start;}
+
 .gallery-main-section h1{
   margin-top: 80px;
   margin-bottom: 20px;
@@ -87,3 +89,5 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+

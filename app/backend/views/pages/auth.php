@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Auth</title>
+  <!---       
+  
+  
+  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../../../frontend/public/css/pages/auth.css">
+    <?php
+        require_once('../../session/session.php');
+        require_once('../components/alerts.php');
+    ?>
 </head>
     <body>
 
@@ -22,7 +30,7 @@
 
                     <div class="input-group">
                         <i class='bx bx-lock-alt'></i>
-                        <input type="password" placeholder="Senha" required name="password">
+                        <input type="password" placeholder="Senha" required name="password" minlength="8" maxlength="12">
                     </div>
 
                     <button class="btn-primary" type="submit">Entrar</button>
@@ -51,17 +59,17 @@
 
                     <div class="input-group">
                         <i class='bx bx-lock-alt'></i>
-                        <input type="password" placeholder="Senha" required name="password">
+                        <input type="password" placeholder="Senha" required name="password" minlength="8" maxlength="12">
                     </div>
 
                     <div class="input-group">
                         <i class='bx bx-phone'></i>
-                        <input type="tel" placeholder="Telefone" required name="phone_number">
+                        <input type="tel" placeholder="Telefone" required name="phone_number" maxlength="9" minlength="9">
                     </div>
 
                     <div class="input-group textarea">
                         <i class='bx bx-align-left'></i>
-                        <textarea placeholder="Dê-nos uma breve biografia sobre si" required name="biography"></textarea>
+                        <textarea placeholder="Dê-nos uma breve biografia sobre si" required name="biography" minlength="50" maxlength="200"></textarea>
                     </div>
 
                     <div class="input-group">
@@ -73,7 +81,6 @@
                             <option value="3">Escultura</option>
                             <option value="4">Fotografia</option>
                             <option value="5">Pintura</option>
-                            <option value="6">Todos</option>
                         </select>
                     </div>
 
@@ -91,4 +98,4 @@
     </body>
 </html>
 <script src="../../../frontend/src/components/auth_validations.js"></script>
-<script src="../../../frontend/src/pages/Auth.js"></script>
+<script type="module" src="../../../frontend/src/pages/auth.js"></script>
